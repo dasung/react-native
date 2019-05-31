@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/dasung/react-native-hello/issues"
   },
-  "homepage": "https://github.com/dasung/react-native-hello#readme"
+  "homepage": "https://github.com/dasung/react-native-hello#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.3"
+  }
 }
