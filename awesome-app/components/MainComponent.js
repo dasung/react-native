@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import Menu from './MenuComponent';
+
+import Dishdetail from './DishdetailComponent';
+import { View } from 'react-native';
 import { DISHES } from '../shared/dishes';
-import DishDetail from './DishdetailComponent';
-import View from 'react-native';
+
 class Main extends Component
 {
-  constructor(props) {
+  constructor( props ) {
     super(props);
     this.state = {
       dishes: DISHES,
@@ -13,17 +15,16 @@ class Main extends Component
     };
   }
 
-  onDishSelect(dishId) {
-    this.setState( {selectedDish: dishId} );
+  onDishSelect( dishId ) {
+    this.setState({ selectedDish: dishId })
   }
 
   render() {
  
     return (
-      <View style={{flex: 1}}>
-        <Menu dishes={this.state.dishes} 
-              onPress={(dishId) => this.onDishSelect(dishId)} />
-        <DishDetail dish={this.state.dishes.filter((dish) =>dish.id == dish.state.selectedDish)[0]} />
+      <View style = {{ flex: 1 }} >
+        <Menu dishes = { this.state.dishes } onPress = { ( dishId ) => this.onDishSelect( dishId )} />
+        <Dishdetail dish = { this.state.dishes.filter( ( dish ) => dish.id === this.state.selectedDish )[0] } />
       </View>
     );
   }
