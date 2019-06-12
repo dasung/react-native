@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Text, View } from 'react-native';
 import { Card } from 'react-native-elements';
 import { DISHES } from '../shared/dishes';
@@ -39,8 +39,9 @@ class Dishdetail extends Component
     };
 
     render() {
-        const dishId = this.props.navigation.getParam( 'dishId', '' );
-        return(<RenderDish dish = { this.state.dishes[+dishId] } />);
+        // which dish should be displayed
+        const dishId = this.props.navigation.getParam( 'dishId', '' );  // get parameter from navigator
+        return(<RenderDish dish = { this.state.dishes[+dishId] } />);   // select specific dish (+ turns to a number)
     }
 }
 

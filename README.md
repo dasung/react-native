@@ -25,4 +25,10 @@
 ## react-native-elements
 
 - npm install --save react-native-elements
+  - ListItem
+  - CARD
+
+## react navigation
+
+- npm install --save react-navigation
 
