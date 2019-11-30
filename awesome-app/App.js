@@ -14,7 +14,7 @@ export default class App extends React.Component {
   }
 }
 
-/*
+/* In line JavaScript styling (used in react)
 const styles = StyleSheet.create({
   container: {
     flex: 1,

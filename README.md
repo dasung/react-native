@@ -1,3 +1,19 @@
+
+
+## Structure
+
+* app.js (main-entry point)
+
+* package.js
+
+  * dependencies
+
+    *  "expo": "^35.0.0"
+    * "react": "16.8.3"
+    * "react-native"
+
+    
+
 ## react-native-hello
 
 * package.json
