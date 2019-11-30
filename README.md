@@ -32,3 +32,22 @@
 
 - npm install --save react-navigation
 
+
+
+## Migration to the latest node v12.11.0
+
+- Fixed a bug 
+  - awesome-app\node_modules\metro-config\src\defaults\blacklist.js
+
+FROM
+
+var sharedBlacklist = [
+  /node_modules[/\\]react[/\\]dist[/\\].*/,
+];
+
+TO
+
+var sharedBlacklist = [
+ /node_modules[\/\\]react[\/\\]dist[\/\\].*/,
+];
+
