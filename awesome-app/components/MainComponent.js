@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import Home from './HomeComponent';
 import Menu from './MenuComponent';
 import Dishdetail from './DishdetailComponent';
 import { View, Platform } from 'react-native';
-import { createStackNavigator,createAppContainer } from 'react-navigation';
+import { createStackNavigator,createAppContainer, createDrawerNavigator } from 'react-navigation';
 
 // Confirgure Navigator
 const MenuNavigator = createStackNavigator(
@@ -24,16 +25,52 @@ const MenuNavigator = createStackNavigator(
   }
 );
 
+const HomeNavigator = createStackNavigator
+(
+  {
+    Home: { screen: Home }
+  }, 
+  {
+    navigationOptions: {
+      headerStyle: {
+        backgroundColor:  '#512DA8'
+      },
+      headerTintColor: '#fff',  // icons in header
+      headerTitleStyle: {
+        color: '#fff'
+      }
+    }
+  }
+);
+
+const MainNavigator = createDrawerNavigator({
+  Home:{ screen: HomeNavigator,
+      navigationOptions: {
+        title: 'Home',
+        drawerLabel: 'Home'
+      }
+  },
+  Menu: { screen: MenuNavigator,
+      navigationOptions: {
+        title: 'Menu',
+        drawerLabel: 'Menu'
+      }, 
+    }
+}, {
+drawerBackgroundColor: '#D1C4E9'
+});
+
+
 class Main extends Component
 {
   render() {
     // Use MenuNavigator as the View
     return (
       <View style = {{ flex: 1, paddingTop: Platform.OS === 'ios' ? 0 : Expo.Constants.statusBarHeight }} >
-        <MenuNavigator />
+        <MainNavigator />
       </View>
     );
   }
 }
   
-export default createAppContainer( MenuNavigator );
+export default createAppContainer( MainNavigator );
