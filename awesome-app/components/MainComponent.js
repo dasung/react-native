@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Home from './HomeComponent';
+import Profile from './ProfileComponent';
 import Menu from './MenuComponent';
 import Dishdetail from './DishdetailComponent';
 import { View, Platform } from 'react-native';
@@ -43,6 +44,24 @@ const HomeNavigator = createStackNavigator
   }
 );
 
+const ProfileNavigator = createStackNavigator
+(
+  {
+    Profile: { screen: Profile }
+  }, 
+  {
+    navigationOptions: {
+      headerStyle: {
+        backgroundColor:  '#512DA8'
+      },
+      headerTintColor: '#fff',  // icons in header
+      headerTitleStyle: {
+        color: '#fff'
+      }
+    }
+  }
+);
+
 const MainNavigator = createDrawerNavigator({
   Home:{ screen: HomeNavigator,
       navigationOptions: {
@@ -55,7 +74,13 @@ const MainNavigator = createDrawerNavigator({
         title: 'Menu',
         drawerLabel: 'Menu'
       }, 
-    }
+  },
+  Profile: { screen: ProfileNavigator,
+    navigationOptions: {
+      title: 'Profile',
+      drawerLabel: 'Profile'
+    }, 
+ }
 }, {
 drawerBackgroundColor: '#D1C4E9'
 });
@@ -72,5 +97,5 @@ class Main extends Component
     );
   }
 }
-  
+
 export default createAppContainer( MainNavigator );
