@@ -46,18 +46,19 @@ export const DISHES =
     [
         {
         id: 0,
-        name:'Uthappizza',
-        image: 'images/uthappizza.png',
+        name:'Carrot',
+        image: './images/uthappizza.png',
         category: 'mains',
         label:'Hot',
         price:'4.99',
         featured: true,
-        description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'                    
+        description:'The carrot is a root vegetable, usually orange in colour, though purple, black, red, white, and yellow cultivars exist.'  
+        
         },
         {
         id: 1,
         name:'Zucchipakoda',
-        image: 'images/zucchipakoda.png',
+        image: './images/zucchipakoda.png',
         category: 'appetizer',
         label:'',
         price:'1.99',
@@ -67,7 +68,7 @@ export const DISHES =
         {
         id: 2,
         name:'Vadonut',
-        image: 'images/vadonut.png',
+        image: './images/vadonut.png',
         category: 'appetizer',
         label:'New',
         price:'1.99',
@@ -77,7 +78,7 @@ export const DISHES =
         {
         id: 3,
         name:'ElaiCheese Cake',
-        image: 'images/elaicheesecake.png',
+        image: './images/elaicheesecake.png',
         category: 'dessert',
         label:'',
         price:'2.99',
