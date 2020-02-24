@@ -9,10 +9,26 @@ function RenderDish( props )
     const dish = props.dish;
     
         if ( dish != null ) {
+            var icon;
+            switch (dish.id) {
+                case 0:
+                    icon = require('./images/beans.jpg');
+                    break;
+                case 1:
+                    icon = require('./images/carrot.png');
+                    break;
+                case 2:
+                    icon = require('./images/Tomatoe.jpg');
+                    break;
+                case 3:
+                    icon = require('./images/Onion.png');
+                    break;
+                default:
+                    icon = require('./images/uthappizza.png');
+            }
             return(
                 <Card
-                featuredTitle = { dish.name }
-                image = { require( './images/uthappizza.png' ) } >
+                featuredTitle = { dish.name } image = { icon } >
                     <Text style = {{ margin: 10 }} >
                         { dish.description }
                     </Text>

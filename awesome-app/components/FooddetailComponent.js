@@ -11,22 +11,16 @@ function RenderFood( props )
         if ( food != null ) {
             switch (food.id) {
                 case 0:
-                    icon = require('./images/uthappizza.png');
+                    icon = require('./images/carrot.png');
                   break;
                 case 1:
-                    icon = require('./images/uthappizza.png');
+                    icon = require('./images/beetroot.png');
                   break;
                 case 2:
-                    icon = require('./images/uthappizza.png');
+                    icon = require('./images/cabbage.png');
                   break;
                 case 3:
-                    icon = require('./images/uthappizza.png');
-                  break;
-                case 4:
-                    icon = require('./images/uthappizza.png');
-                  break;
-                case 5:
-                    icon = require('./images/uthappizza.png');
+                    icon = require('./images/pumpking.png');
                   break;
                 default:
                     icon = require('./images/uthappizza.png');

@@ -22,7 +22,28 @@ class Menu extends Component
     };
 
     render() {   
+
+
         const renderMenuItem = ( {item, index} ) => {
+            var icon;
+            if ( item != null ) {
+                switch (item.id) {
+                    case 0:
+                        icon = require('./images/beans.jpg');
+                      break;
+                    case 1:
+                        icon = require('./images/carrot.png');
+                      break;
+                    case 2:
+                        icon = require('./images/Tomatoe.jpg');
+                      break;
+                    case 3:
+                        icon = require('./images/Onion.png');
+                      break;
+                    default:
+                        icon = require('./images/uthappizza.png');
+                }
+            }
             return (
                 <ListItem
                     key = { index }
@@ -32,7 +53,7 @@ class Menu extends Component
 
                     // Stack navigator navigates to the Dishdetail and make available dishId ( pass the information to Dishdetail component)
                     onPress= {() => navigate('Dishdetail',{ dishId: item.id })} 
-                    leftAvatar = {{ source: require( './images/uthappizza.png' ) }}
+                    leftAvatar = {{ source: icon }}
                 />
             );
         };

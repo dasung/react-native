@@ -14,6 +14,11 @@ class Profile extends Component
     };
   }
 
+  // Local navigation within the component.
+  static navigationOptions = {
+        title: 'Profile'
+    };
+
   onDishSelect( dishId ) {
     this.setState({ selectedDish: dishId })
   }

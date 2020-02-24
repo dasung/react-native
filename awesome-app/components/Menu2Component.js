@@ -4,7 +4,26 @@ import { ListItem } from 'react-native-elements';
 
 function Menu2( props ) 
 {
+
     const renderMenuItem = ( {item, index} ) => {
+        var icon;
+        switch (item.id) {
+            case 0:
+                icon = require('./images/carrot.png');
+              break;
+            case 1:
+                icon = require('./images/beetroot.png');
+              break;
+            case 2:
+                icon = require('./images/cabbage.png');
+              break;
+            case 3:
+                icon = require('./images/pumpking.png');
+              break;
+            default:
+                icon = require('./images/uthappizza.png');
+          }
+
         return (
             <ListItem
                 key = { index }
@@ -12,7 +31,7 @@ function Menu2( props )
                 subtitle = { item.description }
                 hideChevron = { true }
                 onPress= {() => props.onPress( item.id )}
-                leftAvatar = {{ source: require( './images/uthappizza.png' ) }}
+                leftAvatar = {{ source:  icon }}
           />
         );
     };

@@ -2,43 +2,43 @@ export const DISHES =
     [
         {
         id: 0,
-        name:'Uthappizza',
-        image: 'images/uthappizza.png',
-        category: 'mains',
-        label:'Hot',
-        price:'4.99',
+        name:'Bean',
+        image: 'images/beans.jpg',
+        category: 'Down',
+        label:'Hill',
+        price:'55 LKR',
         featured: true,
-        description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'                    
+        description:'Price of Beans decreased in Dambulla market compared to yesterday due to favourable supply from Bandarawela and Nuwara Eliya areas.'                    
         },
         {
         id: 1,
-        name:'Zucchipakoda',
-        image: 'images/zucchipakoda.png',
-        category: 'appetizer',
-        label:'',
-        price:'1.99',
+        name:'Carrot',
+        image: 'images/carrot.png',
+        category: 'Up',
+        label:'North',
+        price:'70 LKR',
         featured: false,
-        description:'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce'
+        description:'Price of Carrots increased in Dambulla market compared to yesterday due to low supply from Nuwara Eliya and Jaffna areas.'
         },
         {
         id: 2,
-        name:'Vadonut',
+        name:'Tomatoe',
         image: 'images/vadonut.png',
-        category: 'appetizer',
-        label:'New',
-        price:'1.99',
+        category: 'Up',
+        label:'South',
+        price:'98 LKR',
         featured: false,
-        description:'A quintessential ConFusion experience, is it a vada or is it a donut?'
+        description:'Price of Tomatoes increased further in Pettah market compared to yesterday due to favourable less supply from Embilipitiya and Sooriyawewa areas.'
         },
         {
         id: 3,
-        name:'ElaiCheese Cake',
+        name:'Red Onion',
         image: 'images/elaicheesecake.png',
-        category: 'dessert',
-        label:'',
-        price:'2.99',
+        category: 'Down',
+        label:'Imported',
+        price:'155 LKR',
         featured: false,
-        description:'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms'
+        description:'Price of Imported Red Onions declined Dambulla market compared to yesterday due to availability of low quality variety from Pakistan.'
         }
     ];
 
@@ -47,7 +47,7 @@ export const DISHES =
         {
         id: 0,
         name:'Carrot',
-        image: './images/uthappizza.png',
+        image: './images/carrot.png',
         category: 'mains',
         label:'Hot',
         price:'4.99',
@@ -57,32 +57,32 @@ export const DISHES =
         },
         {
         id: 1,
-        name:'Zucchipakoda',
-        image: './images/zucchipakoda.png',
+        name:'Beetroot',
+        image: './images/beetroot.png',
         category: 'appetizer',
         label:'',
         price:'1.99',
         featured: false,
-        description:'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce'
+        description:'The beetroot is the taproot portion of a beet plant, usually known in North America as the beet, and also known as the table beet, garden beet, sugar beet, red beet, dinner beet or golden beet.'  
         },
         {
         id: 2,
-        name:'Vadonut',
-        image: './images/vadonut.png',
+        name:'Cabbage',
+        image: './images/cabbage.png',
         category: 'appetizer',
         label:'New',
         price:'1.99',
         featured: false,
-        description:'A quintessential ConFusion experience, is it a vada or is it a donut?'
+        description:'Cabbage is a leafy green, red, or white biennial plant grown as an annual vegetable crop for its dense-leaved heads.'
         },
         {
         id: 3,
-        name:'ElaiCheese Cake',
-        image: './images/elaicheesecake.png',
+        name:'Pumpking',
+        image: './images/pumpking.png',
         category: 'dessert',
         label:'',
         price:'2.99',
         featured: false,
-        description:'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms'
+        description:'A pumpkin is a cultivar of winter squash that is round with smooth, slightly ribbed skin, and most often deep yellow to orange in coloration.'
         }
     ];
