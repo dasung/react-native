@@ -23,7 +23,7 @@ export const DISHES =
         {
         id: 2,
         name:'Tomatoe',
-        image: 'images/vadonut.png',
+        image: 'images/Tomatoe.jpg',
         category: 'Up',
         label:'South',
         price:'98 LKR',
@@ -33,7 +33,7 @@ export const DISHES =
         {
         id: 3,
         name:'Red Onion',
-        image: 'images/elaicheesecake.png',
+        image: 'images/Onion.png',
         category: 'Down',
         label:'Imported',
         price:'155 LKR',
