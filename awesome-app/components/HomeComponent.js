@@ -11,12 +11,28 @@ function RenderItem(props) {
 
     // this function do conditional rendering
     if(item != null) {
+        switch (item.id) {
+            case 0:
+                icon = require('./images/carrot.png');
+              break;
+            case 1:
+                icon = require('./images/beetroot.png');
+              break;
+            case 2:
+                icon = require('./images/cabbage.png');
+              break;
+            case 3:
+                icon = require('./images/pumpking.png');
+              break;
+            default:
+                icon = require('./images/uthappizza.png');
+          }
         // render item using a card
         return (
             <Card
                 featuredTitle={item.name}
                 featuredSubtitle={item.designation}
-                image = { require( './images/uthappizza.png' ) } >
+                image = { icon } >
                 
                 <Text style = {{ margin: 10 }} >
                     { item.description }
