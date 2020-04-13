@@ -5,11 +5,18 @@ import Menu from './MenuComponent';
 import Dishdetail from './DishdetailComponent';
 import { View, Platform } from 'react-native';
 import { createStackNavigator,createAppContainer, createDrawerNavigator } from 'react-navigation';
+import { Icon } from 'react-native-elements';
 
 // Confirgure Navigator
 const MenuNavigator = createStackNavigator(
   {
-    Menu: { screen: Menu }, // To receive navigation 1
+    Menu: { 
+      screen: Menu,
+      navigationOptions: ({ navigation }) => ({
+        headerLeft: <Icon name="menu" size={24} 
+        onPress={ () => navigation.toggleDrawer() } />          
+      })
+    }, // To receive navigation 1
     Dishdetail: { screen: Dishdetail }  // To receive navigation 2
   },
   {
